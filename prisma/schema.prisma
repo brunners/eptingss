@@ -10,8 +10,15 @@ datasource db {
     url      = env("DATABASE_URL")
 }
 
-model Example {
-    id        String   @id @default(cuid())
-    createdAt DateTime @default(now())
-    updatedAt DateTime @updatedAt
+model indexmedia1 {
+    id          Int    @id @default(autoincrement())
+    mediaurl    String
+    description String
+        
+}
+
+model indexmedia2 {
+    id          Int @id @default(autoincrement())
+    mediaurl    String
+    description String
 }

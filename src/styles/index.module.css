@@ -1,0 +1,36 @@
+.main {
+display: flex;
+width: 100vw;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+}
+.infopic{
+  border: solid black 1px;
+  margin: 6px;
+  width: 25vw;
+  height: 75vh;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+.main{
+  flex-direction: column;
+}
+.infopic{
+  border: solid black 1px;
+  width: 95vw;
+  height: 60vh;
+}
+.circleitem{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: solid black 1px;
+}
+}
+
+
