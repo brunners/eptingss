@@ -1,9 +1,13 @@
 import styles from "../styles/index.module.css";
 import { type NextPage } from "next";
 import Head from "next/head";
-import Link from "next/link";
+import { Modal } from "../../modules/modal";
+import { useModal } from "../../modules/usemodal";
+import React from 'react'
 
 const Home: NextPage = () => {
+  const { isShown, toggle } = useModal();
+  const content = <React.Fragment>Hey, I'm a model.</React.Fragment>;
   return (
 
     <>
