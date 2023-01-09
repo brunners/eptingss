@@ -9,6 +9,9 @@
     "start": "next start",
     "postinstall": "prisma generate"
   },
+  "prisma": {
+    "seed": "ts-node prisma/seed.tsx"
+  },
   "dependencies": {
     "@prisma/client": "^4.8.0",
     "@types/react-headroom": "^3.2.0",
@@ -16,6 +19,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-headroom": "^3.2.1",
+    "ts-node": "^10.9.1",
     "zod": "^3.20.2"
   },
   "devDependencies": {
